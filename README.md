@@ -1,2 +1,1 @@
-# -
-«Дорогами воинской славы»
+# Interactive-map-of-monuments
