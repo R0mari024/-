@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пореческий сельсовет - Карта памятников</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="scrollToTopBtn"><img src="img/icons8-map-96.png" alt="map-point"></button>
+    <header>
+        <h1>«Дорогами воинской славы»</h1>
+    </header>
+
+    <main>
+        <section class="map-container">
+            <!-- SVG карта с деревнями и памятниками -->
+            <svg viewBox="0 0 1032 817" xmlns="http://www.w3.org/2000/svg">
+                <!-- Здесь будет загруженный SVG-код -->
+                <!-- Ниже вставлен ваш файл SVG -->
+                <image href="img/Map_Complet.svg" width="1032" height="817" />
+                <!-- Добавьте интерактивные элементы (например, деревни) -->
+                <rect  class="map-point" x="410" y="25" width="255" height="100" rx="15" data-target="village3"></rect>
+                <rect  class="map-point" x="380" y="180" width="280" height="100" rx="15" data-target="village2"></rect>
+                <rect  class="map-point" x="510" y="445" width="240" height="100" rx="15" data-target="village1"></rect>
+                <rect  class="map-point" x="270" y="390" width="245" height="100" rx="15" data-target="village4"></rect>
+                <rect  class="map-point" x="755" y="430" width="250" height="100" rx="15" data-target="village5"></rect>
+            </svg>
+        </section>
+
+        <section id="village1" class="village-info">
+            <section class="divi">
+                <div class="carousel-container" id="carousel3">
+                    <div class="carousel-slides">
+                        <div class="carousel-slide"><img src="img/Babino/babino_1.jpg" alt="Изображение 7"></div>
+                        <div class="carousel-slide"><img src="img/Babino/babino_2.jpg"" alt="Изображение 8"></div>
+                        <div class="carousel-slide"><img src="img/Babino/babino_3.jpg"" alt="Изображение 9"></div>
+                        <div class="carousel-slide"><img src="img/Babino/babino_4.jpg"" alt="Изображение 10"></div>
+                    </div>
+                    <div class="carousel-buttons">
+                        <button class="carousel-button" onclick="prevSlide(3)">&#10094;</button>
+                        <button class="carousel-button" onclick="nextSlide(3)">&#10095;</button>
+                    </div>
+                </div>
+            </section>
+            <h2>Бабино</h2>
+            <p><b>Братская могила в деревне Бабино: память о трагедии 1943 года</b></p>
+                <p>В Гродненской области, в Гродненском районе, на восточной окраине деревни Бабино, расположено военное захоронение №55544. Это братская могила, которая стала местом последнего покоя для 14 человек — 12 известных и 2 неизвестных. Захоронение занимает площадь 2 на 4 метра и представляет собой важное историческое свидетельство событий, произошедших в годы Великой Отечественной войны.</p>
+                <p><b>История захоронения</b></p>
+                <p>Дата захоронения относится к 1943 году. 11 января этого года немецко-фашистские каратели расстреляли 11 жителей деревни Бабино, среди которых были старики, женщины и дети. Жестокое преступление, совершенное на оккупированных землях, стало одним из многих примеров трагедий, развернувшихся на территории Беларуси в те годы.</p>
+                <p>После освобождения региона и окончания войны, в 1945 году на месте захоронения был установлен бетонный обелиск. Он выполнен в виде часовни и служит мемориалом, увековечивающим память о невинных жертвах.</p>
+                <p><b>Описание состояния захоронения</b></p>
+                <p>Братская могила оформлена в виде бетонного обелиска, стилизованного под часовню. Этот памятник сохраняет историческую и культурную значимость, напоминая потомкам о событиях тех лет. Захоронение находится на юго-западной окраине села и имеет размеры 2 метра в ширину и 4 метра в длину.</p>
+                <p><b>Значение памяти</b></p>
+                <p>Братская могила в деревне Бабино — это место скорби и памяти. Она напоминает о трагедиях, которые обрушились на мирных жителей Беларуси в годы Великой Отечественной войны. Сохранение и уход за такими памятниками — важная часть исторического наследия, которое объединяет поколения и позволяет помнить о страшных уроках прошлого.ителей деревни (старики, женщины, дети), которых 11.1. 1943 г. расстреляли немецко-фашистские каратели. В 1945 г. на могиле поставлен обелиск.</p>
+                <p><b>Рассказ жителя деревни Бабино Даниловича Николая Александровича</b></p>
+                <p>В видео, указанном ниже, Николай Александрович поделился с нами трагической историей деревни Бабино, которую он узнал от родителей. Он является профессором филологических наук, автором монографий по истории края.</p>
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/frKwHgH3b8Q" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </section>
+            </section>
+
+        <section id="village2" class="village-info">
+                <section class="divi">
+                    <div class="carousel-container" id="carousel2">
+                        <div class="carousel-slides">
+                            <div class="carousel-slide"><img src="img/Porezhe/Porezhe_1.jpg" alt="Изображение 4"></div>
+                            <div class="carousel-slide"><img src="img/Porezhe/Porezhe_2.jpg" alt="Изображение 5"></div>
+                            <div class="carousel-slide"><img src="img/Porezhe/Porezhe_3.jpg" alt="Изображение 6"></div>
+                        </div>
+                        <div class="carousel-buttons">
+                            <button class="carousel-button" onclick="prevSlide(2)">&#10094;</button>
+                            <button class="carousel-button" onclick="nextSlide(2)">&#10095;</button>
+                        </div>
+                    </div>
+                    
+                </section>
+                <h2>Поречье</h2>
+                <p><b>Память о героях Поречья в годы Второй мировой войны</b></p>
+                    <p>Во время Второй мировой войны на территории Поречья происходили ожесточенные бои между советскими и немецкими войсками. В память о солдатах, сражавшихся за освобождение Поречья от фашистов, на привокзальной площади перед зданием вокзала был установлен памятник, который является не только символом памяти, но и реальным местом захоронения.</p>
+                    В 1957 году на братской могиле, где похоронены 202 солдата и офицера, погибших в боях за освобождение Поречья, окрестных деревень и города Гродно, был установлен мемориальный памятник. Кроме того, Поречский сельский совет решил увековечить память одного из героев войны, назвав одну из центральных улиц именем Гуляева Михаила Андреевича.
+                    <p><b> Подвиг Михаила Андреевича Гуляева</b></p>
+                    Михаил Андреевич Гуляев проявил себя героически в боях с 24 июня по 10 июля 1944 года. Танковый дивизион под его командованием сумел захватить переправу на реке Оболянка в районе Нового Сикирно и удерживать ее, организовав круговую оборону для обеспечения прохода основных сил дивизии. С рассвета 26 июня немецкие войска, состоявшие примерно из двух полков пехоты и поддерживаемые танками, начали контратаку. Несмотря на численное превосходство врага, Гуляев умело организовал оборону. В течение дня его подразделение уничтожило до двух батальонов пехоты, два танка, одну бронемашину и тринадцать мотоциклов противника.
+                    <p>28 июня 1944 года дивизиону Гуляева была поставлена задача захватить переправу через реку Березину в районе селения Веселово. К вечеру 29 июня, несмотря на заминированный мост, Михаил Андреевич с группой бойцов прорвался на правый берег реки и вступил в бой. В ходе сражения было уничтожено около 200 немецких солдат и офицеров, три транспортёра, а также был расчищен плацдарм для подхода основных сил дивизии.</p>
+                  
+                    <p><b> Героическая гибель и память о подвиге</b></p>
+                    <p>Во время освобождения Поречья и окрестных деревень гвардии майор Михаил Андреевич Гуляев, командир противотанкового истребительного артиллерийского дивизиона, получил смертельное ранение и скончался от ран 15 июля 1944 года. Он был захоронен в братской могиле на привокзальной площади.</p>
+                    Героический путь и мужество Михаила Андреевича Гуляева были высоко оценены Отечеством. За свои заслуги он был награжден Орденом Красной Звезды (1942), Орденом Красного Знамени (1941), Орденом Суворова III степени (1944), Орденом Отечественной войны II степени (1944), а также медалью «За оборону Сталинграда» (1943). Его подвиг навсегда останется в памяти жителей Поречья как символ мужества и самоотверженности в борьбе за свободу.
+                    </p>
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/599RZ4MFo6U" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </section>
+
+        <section id="village3" class="village-info">
+            <section class="divi">
+                <div class="carousel-container" id="carousel1">
+                    <div class="carousel-slides">
+                        <div class="carousel-slide"><img src="img/Zpytie/Zapytie_1.jpg" alt="Изображение 1"></div>
+                        <div class="carousel-slide"><img src="img/Zpytie/Zapytie_2.jpg" alt="Изображение 2"></div>
+                        <div class="carousel-slide"><img src="img/Zpytie/Zapytie_3.jpg" alt="Изображение 3"></div>
+                    </div>
+                    <div class="carousel-buttons">
+                        <button class="carousel-button" onclick="prevSlide(1)">&#10094;</button>
+                        <button class="carousel-button" onclick="nextSlide(1)">&#10095;</button>
+                    </div>
+                </div>
+            </section>
+           <h2>Запурье</h2>
+            <p><b>Трагедия и память Запурья в годы Великой Отечественной войны</b>
+                <p>Запурье, небольшая деревня в Гродненском районе Белоруссии, является местом, где во время Великой Отечественной войны произошла страшная трагедия. 18 сентября 1943 года немецкие оккупационные войска в отместку за гибель лесничего Фолькера расстреляли 48 мирных жителей деревни. Эта расправа была произведена из-за предположений, что убийцы лесничего носили фамилии Бура и Церебей, которые были распространены в местности.</p>
+                <p>Рано утром всех жителей деревни согнали в два дома, а затем вызывали по списку, целыми семьями подводя к яме на расстрел. Самому старшему из погибших было 65 лет, младшему — всего шесть месяцев. По рассказам очевидцев, земля над братской могилой шевелилась еще три дня после трагедии, а вода в колодце неподалеку окрасилась в красный цвет.</p>
+                <p>Некоторые жители, чудом избежавшие гибели, сохранили память о трагедии. Среди них — Владислава Церебей, которой в момент трагедии было десять лет. Она описывала, как в ужасе люди взывали к Богу, а перед их глазами немцы рыли могилу и бросали туда тела погибших.</p>
+                <p>Еще одна местная жительница, Генрика Мозолевская, родившаяся в Запурье, также хранит воспоминания о тех страшных днях, услышанные от родителей и земляков. Она помнит рассказ о своей крестной, которая, сжимая крестик в руке, погибла от вражеской пули. Генрика бережно хранит поэму местного жителя Витуся, который описал события того дня, когда солнце, казалось, скрывалось за тучами от страха.</p>
+                <p>Сегодня на месте трагедии в Запурье установлен памятник. Это братская могила, где захоронены 48 человек, все они известны по именам. Местные власти и жители заботятся о месте захоронения, поддерживая его в надлежащем порядке. Могила расположена на территории Поречского сельсовета, ее границы составляют три метра на три метра.</p>
+                <p>В Гродненском районе проводится большая работа по увековечению памяти защитников Отечества и жертв войны. Благодаря областному патриотическому проекту «Память. Единство. Победа» были установлены мемориальные таблички, посвященные событиям Великой Отечественной войны, и установлены новые имена погибших.</p>
+                <p>Каждый год, 22 марта, в День памяти Хатынской трагедии, жители Гродненского района собираются у памятников, чтобы почтить память жертв войны. В этот день десятки людей съезжаются к местам захоронений, возлагают цветы и вспоминают события, которые не должны быть забыты.</p>
+                <p>Память о трагедии Запурья и других уничтоженных деревнях живет в сердцах местных жителей и передается из поколения в поколение. Тропа к местам захоронений остается народной, и даже в тех деревнях, которые так и не возродились после войны, люди продолжают приходить, чтобы поклониться тем, кто отдал свои жизни за сегодняшний мирный день .</p>
+                </p>
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/ng45kNjL69E" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+        </section>
+
+        <!-- Новая деревня 4 -->
+<section id="village4" class="village-info">
+    <section class="divi">
+        <div class="carousel-container" id="carousel4">
+            <div class="carousel-slides">
+                <div class="carousel-slide"><img src="img/Ribnitsa/Ribnitsa-1.jpg" alt="Изображение 11"></div>
+                <div class="carousel-slide"><img src="img/Ribnitsa/Ribnitsa-2.jpg" alt="Изображение 12"></div>
+                <div class="carousel-slide"><img src="img/Ribnitsa/Ribnitsa-3.jpg" alt="Изображение 13"></div>
+            </div>
+            <div class="carousel-buttons">
+                <button class="carousel-button" onclick="prevSlide(4)">&#10094;</button>
+                <button class="carousel-button" onclick="nextSlide(4)">&#10095;</button>
+            </div>
+        </div>
+    </section>
+    <h2>Рыбница</h2>
+    <p><b>Трагедия и память деревни Рыбница в годы Великой Отечественной войны</b>
+        <p>Деревня Рыбница, расположенная в Гродненском районе Республики Беларусь, хранит память о событиях Великой Отечественной войны. В июле 1944 года во время освобождения территории от немецко-фашистских захватчиков здесь погибли 29 советских воинов. Они были похоронены в братской могиле недалеко от местного клуба.</p>
+        <p>В 1958 году на месте захоронения был установлен памятник — скульптура воина, стоящего с автоматом. Это символ мужественности и памяти о тех, кто отдал свои жизни за освобождение Родины. Территория братской могилы ухожена, размеры захоронения составляют 5 на 5 метров. </p>
+        <p>Согласно архивным данным, в могиле захоронены 28 человек, среди которых два воина известны поименно — Иван Александрович Паронков и Иван Николаевич Чидко. Остальные 26 погибших остались неизвестными.</p>
+        <p>Уход за памятником и братской могилой осуществляется СПК «Прогресс-Вертелишки». Местные жители и власти регулярно ухаживают за мемориалом, сохраняя память о тех, кто пал в борьбе с врагом.</p>
+        <p>Сегодня это место служит напоминанием о героическом подвиге советских солдат, которые ценой своей жизни приблизили Победу.</p>
+    </section>
+</section>
+
+<!-- Новая деревня 5 -->
+<section id="village5" class="village-info">
+    <section class="divi">
+        <div class="carousel-container" id="carousel5">
+            <div class="carousel-slides">
+                <div class="carousel-slide"><img src="img/Pridolgoe/Pridolgoe-1.jpg" alt="Изображение 14"></div>
+                <div class="carousel-slide"><img src="img/Pridolgoe/Pridolgoe-2.jpg" alt="Изображение 15"></div>
+                <div class="carousel-slide"><img src="img/Pridolgoe/Pridolgoe-3.jpg" alt="Изображение 16"></div>
+            </div>
+            <div class="carousel-buttons">
+                <button class="carousel-button" onclick="prevSlide(5)">&#10094;</button>
+                <button class="carousel-button" onclick="nextSlide(5)">&#10095;</button>
+            </div>
+        </div>
+    </section>
+    <h2>Придолгое</h2>
+    <p><b>Трагедия и память деревни Придолгое в годы Великой Отечественной войны</b></p>
+    <p>В глубине лесов Гродненского района, в деревне Придолгое, расположен скромный, но значимый памятник, посвященный воинам Красной армии, павшим в годы Великой Отечественной войны. Этот мемориал напоминает о героизме советских солдат, отдавших жизни в борьбе с фашистскими захватчиками.</p>
+    <p>Памятник представляет собой обелиск, увенчанный красной звездой — символом Победы и памяти о подвиге советских воинов. Он огражден аккуратным деревянным забором, окрашенным в желтый цвет, что придает месту ухоженный и торжественный вид. На плитах вокруг памятника можно увидеть цветы, которые приносят местные жители, отдавая дань уважения защитникам Родины.</p>
+    <p>Здесь покоятся солдаты, павшие в боях на территории Гродненской области. В тяжелые годы войны эти места стали ареной ожесточенных сражений, и многие бойцы Красной армии нашли свой последний приют именно здесь. Братская могила в Придолгом стала частью огромного мемориального наследия Беларуси, которая свято хранит память о тех, кто ценой своей жизни отстоял мир.</p>
+    <p>Сегодня мемориал поддерживается в достойном состоянии благодаря усилиям местных жителей и волонтеров. Они регулярно ухаживают за территорией, обновляют забор и высаживают цветы. В рамках патриотических проектов и мероприятий в День Победы и другие памятные даты сюда приходят люди, чтобы возложить цветы и вспомнить подвиг солдат.</p>
+    <p>Этот памятник — важное напоминание о цене свободы и необходимости сохранять память о героях, чтобы будущие поколения знали и чтили их подвиг.</p>
+
+    </section>
+
+
+        <section class="village-info">
+            <h2>Источники</h2>
+            <p><a href="https://www.sb.by/articles/malenkikh-detey-v-yamu-brosali-zhivymi-.html"> SB.by </a></p>
+            <p><a href="https://grodnonews.by/news/zhizn/pamyatnik_u_derevni_babino_kakuyu_istoriyu_i_chi_imena_khranit_zakhoronenie_i_kak_seychas_chtyat_pamyat_o_pogibshikh_soldatakh_pobedy.html">grodnonews.by</a></p>
+            <p><a href="https://pomnim.by/mass-grave/71661">pomnim.by</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="https://kadet.edu-grodno.gov.by/?ysclid=m296309fa3800970654">2025 Государственное учреждение образования "Гродненское областное кадетское училище"</a></p>
+    </footer>
+
+    <script>
+        // Скрипт для навигации по карте
+        document.querySelectorAll('.map-point').forEach(function(point) {
+            point.addEventListener('click', function() {
+                const target = this.getAttribute('data-target');
+                document.getElementById(target).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+    <script>
+                    document.addEventListener("scroll", handleScroll);
+            // get a reference to our predefined button
+            var scrollToTopBtn = document.querySelector(".scrollToTopBtn");
+
+            function handleScroll() {
+            var scrollableHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var GOLDEN_RATIO = 0.5;
+
+            if ((document.documentElement.scrollTop / scrollableHeight ) > 0.1) {
+                //show button
+                scrollToTopBtn.style.display = "block";
+            } else {
+                //hide button
+                scrollToTopBtn.style.display = "none";
+            }
+            }
+
+scrollToTopBtn.addEventListener("click", scrollToTop);
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+    </script>
+    <script>
+         const carousels = [
+        { container: document.querySelector('#carousel1 .carousel-slides'), index: 0 },
+        { container: document.querySelector('#carousel2 .carousel-slides'), index: 0 },
+        { container: document.querySelector('#carousel3 .carousel-slides'), index: 0 },
+        { container: document.querySelector('#carousel4 .carousel-slides'), index: 0 },
+        { container: document.querySelector('#carousel5 .carousel-slides'), index: 0 }
+    ];
+
+    function showSlide(carouselNum, index) {
+        const carousel = carousels[carouselNum - 1];
+        const slides = carousel.container.children;
+        carousel.index = (index + slides.length) % slides.length;
+        carousel.container.style.transform = `translateX(-${carousel.index * 100}%)`;
+    }
+
+    function nextSlide(carouselNum) {
+        showSlide(carouselNum, carousels[carouselNum - 1].index + 1);
+    }
+
+    function prevSlide(carouselNum) {
+        showSlide(carouselNum, carousels[carouselNum - 1].index - 1);
+    }
+
+    carousels.forEach((carousel, index) => {
+        setInterval(() => nextSlide(index + 1), 3000);
+    });
+    </script>
+</body>
+</html>

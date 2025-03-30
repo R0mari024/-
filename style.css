@@ -1,0 +1,327 @@
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #2b2b2b;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    background-image: url('img/war_texture.jpg'); /* Добавьте изображение текстуры */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+header {
+    background-color: #8b0000;
+    color: #ffcc00;
+    padding: 15px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-bottom: 5px solid #ffcc00;
+}
+
+.goky{
+    font-size: 24px;
+}
+
+h1, h2, h3 {
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px #000;
+}
+
+h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+main {
+
+    margin: 5px auto;
+    padding: 0 5px;
+}
+
+section {
+    margin: 50px 0;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+}
+
+.map-container svg {
+    max-width: 100%;
+    height: auto;
+}
+
+.map-point {
+    fill: #8b0000;
+    opacity: .1;
+    cursor: pointer;
+    transition: fill 0.3s;
+}
+
+.map-point:hover {
+    fill: #ff6600;
+    opacity: 0.5;
+}
+
+.village-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #8b0000;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-indent: 25px;
+    margin: 10px;
+    text-align: justify;
+}
+
+footer {
+    background-color: #8b0000;
+    color: #ffcc00;
+    padding: 20px;
+    text-align: center;
+    border-top: 5px solid #ffcc00;
+}
+
+a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff6600;
+    text-decoration: underline;
+}
+
+
+.scrollToTopBtn{
+    scale: 50%;
+    margin-left: 35px;
+    display: block;
+    opacity: 0.7;
+    outline: none;
+    background-color: rgba(139, 0, 0, 0.7);
+    color: #ffcc00;
+    border: 2px solid #ffcc00;
+    }
+
+.scrollToTopBtn:hover{
+    opacity: 1;
+    transition: fill 0.3s;
+    background-color: #ffcc00;
+    color: #8b0000;
+}
+
+  
+.scrollToTopBtn {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 100;
+    display: none;
+    padding: 8px 4px;
+    cursor: pointer;
+  }
+
+
+  @media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    .village-info {
+        font-size: 18px;
+    }
+    header h1 {
+        font-size: 22px;
+    }
+    .map-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    /* Уменьшаем размер карты для мобильных устройств */
+    .map-container svg {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Для экранов шириной 480px и меньше (мобильные телефоны) */
+@media (max-width: 480px){
+    header {
+        font-size: 16px;
+    }
+    .village-info {
+        font-size: 14px;
+    }
+    .goky {
+        font-size: 24px;
+    }
+
+    header h1 {
+        font-size: 18px;
+    }
+
+    }
+    
+    /* Кнопка возврата наверх (scrollToTop) для мобильных устройств */
+    .scrollToTopBtn {
+        bottom: 20px;
+        right: 20px;
+        scale: 40%;
+    }
+
+
+        /* Стили для слайдера фотографий */
+.photo-slider {
+    margin: 50px auto;
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Кнопки для прокрутки */
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Медиа-запросы для мобильных устройств */
+@media (max-width: 768px) {
+    .photo-slider {
+        max-width: 90%;
+    }
+
+    .prev-btn, .next-btn {
+        font-size: 20px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .prev-btn, .next-btn {
+        font-size: 18px;
+        padding: 6px;
+    }
+}
+
+.divi {
+    box-sizing: border-box;
+}
+.carousel-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%; /* Занимает всю ширину контейнера */
+    height: 100%; /* Занимает всю высоту контейнера */
+    object-fit: cover; /* Обрезает изображение, чтобы заполнить контейнер */
+}
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.carousel-slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.carousel-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.carousel-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+/* Стили для контейнера видео */
+.video-container {
+    width: 100%; /* Видео будет занимать всю ширину секции */
+    max-width: 800px; /* Ограничение по ширине для больших экранов */
+    margin: 0 auto; /* Центрирование видео внутри секции */
+    position: relative;
+    padding-bottom: 56.25%; /* Соотношение сторон 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px; /* Закругленные углы (по желанию) */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Тень для красоты */
+}
+
+/* Стили для iframe */
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Добавляем адаптацию под разные экраны */
+@media (max-width: 600px) {
+    .video-container {
+        max-width: 100%; /* На маленьких экранах видео занимает всю ширину */
+        border-radius: 5px; /* Меньше скругление */
+    }
+}
+
